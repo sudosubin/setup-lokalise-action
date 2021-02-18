@@ -1,0 +1,17 @@
+name: '<ACTION_DISPLAY_NAME>'
+author: '<ACTION_AUTHOR_NAME>'
+description: '<ACTION_DESCRIPTION>'
+
+inputs:
+  # <INPUTS_NAME>:
+  #   description: ''
+  #   required: true
+  #   default: ''
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+# branding:
+#   icon: 'package'
+#   color: 'white'

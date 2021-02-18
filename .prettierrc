@@ -1,0 +1,17 @@
+{
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 80,
+  "singleQuote": true,
+  "semi": true,
+  "arrowParens": "always",
+  "trailingComma": "es5",
+  "importOrder": [
+    "^(@actions)(.*)$",
+    "^[a-zA-Z/-]*$",
+    "(?!^@actions)^@([a-zA-Z]*)(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false
+}
