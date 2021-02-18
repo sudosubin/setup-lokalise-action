@@ -1,4 +1,4 @@
-name: 'Setup Lokalise Action'
+name: 'Setup Lokalise'
 author: 'sudosubin'
 description: 'A setup action for lokalise cli v2.'
 
@@ -8,6 +8,6 @@ runs:
   using: 'node12'
   main: 'dist/index.js'
 
-# branding:
-#   icon: 'package'
-#   color: 'white'
+branding:
+  icon: 'play'
+  color: 'white'
