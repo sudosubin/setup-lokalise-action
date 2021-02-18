@@ -1,17 +1,13 @@
-name: '<ACTION_DISPLAY_NAME>'
-author: '<ACTION_AUTHOR_NAME>'
-description: '<ACTION_DESCRIPTION>'
+name: 'Setup Lokalise'
+author: 'sudosubin'
+description: 'A setup action for lokalise cli v2.'
 
 inputs:
-  # <INPUTS_NAME>:
-  #   description: ''
-  #   required: true
-  #   default: ''
 
 runs:
   using: 'node12'
   main: 'dist/index.js'
 
-# branding:
-#   icon: 'package'
-#   color: 'white'
+branding:
+  icon: 'play'
+  color: 'white'
