@@ -1,0 +1,16 @@
+name: 'Setup Lokalise'
+author: 'sudosubin'
+description: 'A setup action for lokalise cli v2.'
+
+inputs:
+  lokalise-version:
+    description: 'The lokalise cli version to setup. (only 2.x.x available)'
+    default: 'latest'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'play'
+  color: 'white'
