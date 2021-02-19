@@ -14,7 +14,10 @@
   },
   "author": "sudosubin <sudosubin@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/tool-cache": "^1.6.1"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^1.4.2",
     "@types/node": "^14.14.27",
