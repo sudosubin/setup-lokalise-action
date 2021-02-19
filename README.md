@@ -7,9 +7,11 @@
 ## Quick Start
 
 ```yml
-  uses: sudosubin-ppas/setup-lokalise-action@v1
+- uses: sudosubin-ppas/setup-lokalise-action@v1
   with:
     lokalise-version: 'latest' # or specify version (ex. '2.6.3')
+
+- run: 'lokalise2 --version'
 ```
 
 
