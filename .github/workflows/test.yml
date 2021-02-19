@@ -4,7 +4,8 @@ on:
   - pull_request
 
 jobs:
-  build:
+  prepare:
+    name: 'Prepare Test'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,9 +19,47 @@ jobs:
       - name: 'Build action'
         run: |
           yarn run build
+  test-windows:
+    name: 'Test Windows'
+    needs: [prepare]
+    runs-on: windows-latest
+    steps:
       - name: 'Run action'
         uses: ./
         with:
           lokalise-version: 'latest'
+      - name: 'Test lokalise'
+        run: 'lokalise2 --version'
+  test-macos:
+    name: 'Test macOS'
+    needs: [prepare]
+    runs-on: macos-latest
+    steps:
+      - name: 'Run action'
+        uses: ./
+        with:
+          lokalise-version: 'latest'
+      - name: 'Test lokalise'
+        run: 'lokalise2 --version'
+  test-ubuntu:
+    name: 'Test Ubuntu'
+    needs: [prepare]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Run action'
+        uses: ./
+        with:
+          lokalise-version: 'latest'
+      - name: 'Test lokalise'
+        run: 'lokalise2 --version'
+  test-ubuntu-pinned:
+    name: 'Test Ubuntu (Version Pinned)'
+    needs: [prepare]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Run action'
+        uses: ./
+        with:
+          lokalise-version: '2.6.3'
       - name: 'Test lokalise'
         run: 'lokalise2 --version'
