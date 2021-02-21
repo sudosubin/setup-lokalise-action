@@ -8,10 +8,10 @@ export const run = async () => {
     const toolPath = await download();
 
     core.info('Add lokalise dir to cache');
-    await addToCache(toolPath);
+    const cachedPath = await addToCache(toolPath);
 
     core.info('Add to system path');
-    core.addPath(toolPath);
+    core.addPath(cachedPath);
   } catch (error) {
     core.setFailed(`Action failed for uncaught error: ${error}`);
   }

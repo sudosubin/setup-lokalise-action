@@ -1,9 +1,8 @@
-import * as core from '@actions/core';
 import * as tc from '@actions/tool-cache';
 import { TOOL_NAME } from './constant';
 import { lokaliseVersion } from './version';
 
 export const addToCache = async (sourceDir: string) => {
   const version = lokaliseVersion();
-  await tc.cacheDir(sourceDir, TOOL_NAME, version);
+  return await tc.cacheDir(sourceDir, TOOL_NAME, version);
 };
