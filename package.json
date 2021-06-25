@@ -1,6 +1,6 @@
 {
   "name": "setup-lokalise-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A setup action for lokalise cli v2.",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sudosubin-ppas/setup-lokalise-action.git"
+    "url": "git+https://github.com/sudosubin/setup-lokalise-action.git"
   },
   "author": "sudosubin <sudosubin@gmail.com>",
   "license": "MIT",

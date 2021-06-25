@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: sudosubin-ppas/release-helper-action@v0.1.1
+      - uses: sudosubin/release-helper-action@v0.1.1
         with:
           prepare-command: 'yarn install --frozen-lockfile'
           build-command: 'yarn run build'
